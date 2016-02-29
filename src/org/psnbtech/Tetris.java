@@ -112,6 +112,12 @@ public class Tetris extends JFrame {
 	 * The speed of the game.
 	 */
 	private float gameSpeed;
+        
+        
+        /**
+	 * Background Music.
+	 */
+	private SoundClip souBackgroundB;
 		
 	/**
 	 * Creates a new Tetris instance. Sets up the window's properties,
@@ -137,6 +143,10 @@ public class Tetris extends JFrame {
 		 */
 		add(board, BorderLayout.CENTER);
 		add(side, BorderLayout.EAST);
+                
+                souBackgroundB = new SoundClip("org.psnbtech.audio/BackgroundB.wav");
+
+               
 		
 		/*
 		 * Adds a custom anonymous KeyListener to the frame.
